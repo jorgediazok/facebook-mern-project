@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import EmojiFlagsIcon from '@material-ui/icons/EmojiFlags';
