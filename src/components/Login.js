@@ -6,7 +6,7 @@ import { useStateValue } from '../context/StateProvider';
 import '../styles/Login.css';
 
 function Login() {
-  const [{ state, dispatch }] = useStateValue();
+  const [state, dispatch] = useStateValue();
 
   const signIn = () => {
     auth
