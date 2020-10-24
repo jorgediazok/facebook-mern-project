@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: 'AIzaSyAz2vpA0HFIKWjxRF0VeGXNGH2If7pqOqE',
   authDomain: 'facebook-mern-project.firebaseapp.com',
   databaseURL: 'https://facebook-mern-project.firebaseio.com',
@@ -9,5 +9,10 @@ var firebaseConfig = {
   messagingSenderId: '521860035283',
   appId: '1:521860035283:web:6d24fd3257109a623c5a26',
 };
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
+const auth = firebase.auth();
+const provider = new firebase.auth.GoogleAuthProvider();
+export { auth, provider };
+export default db;
